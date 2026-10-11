@@ -35,11 +35,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: gold;
+  overflow-x: auto;
 }
 .links{
   color: #FEE33E;
