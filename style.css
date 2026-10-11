@@ -298,3 +298,189 @@ footer{
 #footer-end{
   color: #F5C96D;
 }
+
+
+
+/* =====================================
+   1. EXTRA SMALL MOBILE
+   320px - 374px
+   ===================================== */
+@media screen and (max-width: 374px) {
+  header {
+    padding: 8px;
+  }
+
+  .header-heading {
+    font-size: 22px;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  .links {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 20px 12px;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+
+  .hero h3 {
+    font-size: 17px;
+  }
+
+  .event-countdown {
+    font-size: 16px;
+  }
+}
+
+
+/* =====================================
+   2. STANDARD SMARTPHONES
+   375px - 480px
+   ===================================== */
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  header {
+    padding: 10px 14px;
+  }
+
+  .header-heading {
+    font-size: 26px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 28px 16px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .hero h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =====================================
+   3. LARGE PHONES
+   481px - 600px
+   ===================================== */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .hero {
+    padding: 35px 22px;
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+
+  .header-heading {
+    font-size: 29px;
+  }
+}
+
+
+/* =====================================
+   4. TABLETS / SMALL LANDSCAPE SCREENS
+   601px - 767px
+   ===================================== */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  header {
+    padding: 15px 24px;
+  }
+
+  .hero {
+    padding: 40px 28px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .links {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================
+   5. TABLETS / SMALL LAPTOPS
+   768px - 1023px
+   ===================================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 16px 30px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 45px 35px;
+  }
+
+  .hero h2 {
+    font-size: 46px;
+  }
+}
+
+
+/* =====================================
+   6. LAPTOPS / DESKTOPS
+   1024px - 1439px
+   ===================================== */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero {
+    padding: 55px 5%;
+  }
+
+  .hero h2 {
+    font-size: 52px;
+  }
+}
+
+
+/* =====================================
+   7. LARGE LAPTOPS / DESKTOPS
+   1440px and above
+   ===================================== */
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1800px;
+    margin-inline: auto;
+  }
+
+  .hero {
+    padding: 70px 7%;
+  }
+
+  .hero h2 {
+    font-size: 60px;
+  }
+}
+
+
+/* =====================================
+   8. LANDSCAPE PHONES
+   ===================================== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
