@@ -56,7 +56,7 @@ header{
 #hero{
   height: 250px;
   width: 384px;
-  background-image: url("../images/hero.png");
+  background-image: url("hero.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -108,7 +108,7 @@ header{
 #about-bushehra{
   height: 400px;
   width: 384px;
-  background-image: url("../images/about.png");
+  background-image: url("about.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
