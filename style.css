@@ -28,8 +28,18 @@ header{
   align-items: center;
   flex-direction: column;
 }
-#navbar{
-  height: 40px;
+nav {
+  min-height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: gold;
 }
 .links{
   color: #FEE33E;
