@@ -77,62 +77,6 @@ nav {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-header{
-  height: 130px;
-}
-/* ===== Navbar CSS ===== */
-nav {
-  width: 100%;
-  min-height: 40px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 10px 15px;
-  box-sizing: border-box;
-
-  background: rgba(3, 16, 39, 0.85);
-  border-bottom: 1px solid rgba(255, 174, 66, 0.5);
-  backdrop-filter: blur(10px);
-}
-
-/* ===== Navbar Links ===== */
-.links {
-  color: #FEE33E;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: 0.3s ease;
-}
-
-/* ===== Hover Effect ===== */
-.links:hover {
-  color: #FFFFFF;
-  background: rgba(255, 140, 50, 0.15);
-  text-shadow: 0 0 10px #FF8C32;
-}
-
-/* ===== Mobile Responsive ===== */
-@media (max-width: 480px) {
-  nav {
-    gap: 5px;
-    padding: 8px 5px;
-  }
-
-  .links {
-    font-size: 12px;
-    padding: 7px 8px;
-  }
-}
-#heading-box{
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -155,7 +99,7 @@ nav {
 #hero{
   height: 250px;
   width: 384px;
-  background-image: url("hero.png");
+  background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -207,7 +151,7 @@ nav {
 #about-bushehra{
   height: 400px;
   width: 384px;
-  background-image: url("about.png");
+  background-image: url("../images/about.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -390,6 +334,3 @@ footer{
 #footer-end{
   color: #F5C96D;
 }
-
-
-
