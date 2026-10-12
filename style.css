@@ -3,478 +3,515 @@
 ══════════════════════*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cinzel:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap');
 
-* {
+
+*{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+body{
   background: linear-gradient(
-    135deg,
-    #0A1E42,
-    #053164,
-    #000F29,
-    #031A3E,
-    #002250,
-    #002452,
-    #0C346C
-  );
-  font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
+  135deg,
+  #0A1E42,
+  #053164,
+  #000F29,
+  #031A3E,
+  #002250,
+  #002452,
+  #0C346C);
 }
-
-img {
-  max-width: 100%;
-  display: block;
+/*══════════════════════
+         Header
+══════════════════════*/
+header{
+  height: 130px;
 }
-
-a {
-  text-decoration: none;
-}
-
-header {
-  width: 100%;
-}
-
+/* ===== Navbar CSS ===== */
 nav {
   width: 100%;
-  min-height: 52px;
+  min-height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   padding: 10px 15px;
+  box-sizing: border-box;
+
   background: rgba(3, 16, 39, 0.85);
   border-bottom: 1px solid rgba(255, 174, 66, 0.5);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
+/* ===== Navbar Links ===== */
 .links {
   color: #FEE33E;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
+
   padding: 8px 12px;
   border-radius: 6px;
   transition: 0.3s ease;
-  white-space: nowrap;
 }
 
+/* ===== Hover Effect ===== */
 .links:hover {
   color: #FFFFFF;
   background: rgba(255, 140, 50, 0.15);
   text-shadow: 0 0 10px #FF8C32;
 }
 
-#heading-box {
+/* ===== Mobile Responsive ===== */
+@media (max-width: 480px) {
+  nav {
+    gap: 5px;
+    padding: 8px 5px;
+  }
+
+  .links {
+    font-size: 12px;
+    padding: 7px 8px;
+  }
+}
+
+#heading-box{
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  padding: 0 12px;
 }
-
-.header-heading {
+.header-heading{
   color: #FA8B51;
-  line-height: 1.1;
+  line-height: 1.0;
 }
-
-#header-hindi-heading,
-#header-english-heading {
-  display: block;
-}
-
-#header-hindi-heading {
+#header-hindi-heading{
   font-family: 'Cinzel', serif;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  font-weight: 700;
 }
-
-#header-english-heading {
-  font-size: clamp(1rem, 2.8vw, 1.7rem);
-  font-family: 'Poppins', sans-serif;
+#header-english-heading{
+  font-size: 20px;
+  font-family: 'Poppins', serif;
   margin-top: 10px;
 }
 
-main {
-  width: 100%;
-}
-
-#hero {
-  width: min(100%, 440px);
-  min-height: 240px;
-  margin: 0 auto;
+/*══════════════════════
+     Hero Section
+══════════════════════*/
+#hero{
+  height: 250px;
+  width: 384px;
   background-image: url("hero.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 22px 18px 10px;
+  background-size: contain;
+  margin: 0 auto;
 }
-
-.hero-text {
+.hero-text{
   color: #F1DCAC;
-  padding-left: 8px;
+  padding-left: 25px;
+  padding-top: 5px;
 }
-
-#hero-heading {
-  font-family: Georgia, Arial, sans-serif;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  line-height: 1.2;
-  padding-top: 20px;
-  margin-bottom: 10px;
+#hero-heading{
+  font-family: Georgia,Arial;
+  padding-top: 30px;
 }
-
-#hero-btn-box {
-  margin-left: 10px;
+#hero-btn-box{
+   margin-left: 20px;
   margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
 }
-
-.hero-btn {
-  height: 38px;
-  min-width: 90px;
+.hero-btn{
+  height: 27px;
+  width: 80px;
   color: #FAFBFF;
   border-radius: 10px;
-  background: linear-gradient(90deg, #F57517, #E04D16);
+  margin: 5px;
+  background: linear-gradient(
+  90deg,
+  #F57517,
+  #E04D16);
   border: 2px solid #7A7B7D;
-  padding: 0 16px;
-  font-weight: 600;
-  cursor: pointer;
 }
-
-#hero-event-countdown {
-  width: min(90%, 210px);
-  min-height: 52px;
+#hero-event-countdown{
+  height:50px;
+  width: 200px;
   border: 2px solid #534C4A;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 22px auto 0;
-  padding: 5px 12px;
-  gap: 2px;
+  margin: 25px auto 0;
 }
-
-.time-text {
-  font-size: clamp(1.4rem, 3vw, 2rem);
+.time-text{
+  font-size: 32px;
   color: #ECCB99;
-  font-family: Georgia, Arial, sans-serif;
-  line-height: 1;
+  font-family: Georgia,Arial;
 }
 
-.gold-line {
-  width: 100%;
-  height: 2px;
-  border: none;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #ff7b24,
-    #ffe5a0,
-    #d4af37,
-    transparent
-  );
-  margin: 12px 0;
-}
 
-#about-bushehra {
-  width: min(100%, 440px);
-  min-height: 380px;
-  margin: 0 auto;
+/*══════════════════════
+ About-Dushehra Section
+══════════════════════*/
+#about-bushehra{
+  height: 400px;
+  width: 384px;
   background-image: url("about.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 18px 16px 20px;
+  margin: 0 auto;
 }
-
-#about-about {
+#about-about{
   color: #F4AE48;
-  margin: 10px 0 12px;
-  line-height: 1.1;
-  font-size: clamp(0.88rem, 2.8vw, 1.1rem);
+  margin: 20px;
+  padding-top: 10px;
+  line-height: 1.0;
 }
-
-#about-heading {
-  margin: 10px 0 18px;
+#about-heading{
+  margin: 20px;
   color: #F9E2A8;
-  font-size: clamp(1.4rem, 4vw, 2.1rem);
-  line-height: 1.3;
 }
-
-#about-p,
-#about-p2 {
+#about-p{
   color: #F9EFCB;
-  margin: 10px 0 18px;
-  font-size: clamp(1rem, 2.8vw, 1.2rem);
-  line-height: 1.6;
+  margin: 20px;
+  font-size: 20px;
 }
-
-#about-p2 {
+#about-p2{
   color: #F7D89C;
+  margin: 20px;
+  font-size: 20px;
 }
 
-#blueprint-heading {
+
+.gold-line {
+    width: 100%;
+    height: 2px;
+    border: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ff7b24,
+        #ffe5a0,
+        #d4af37,
+        transparent
+    );
+}
+
+/*══════════════════════
+    Dushehra Scroll
+══════════════════════*/
+#blueprint-heading{
   margin-left: 20px;
-  margin-top: 18px;
+  margin-top: 20px;
   color: #EE963F;
-  font-size: clamp(1.4rem, 4vw, 2rem);
 }
-
-#dushehra-scroll,
-#album2025 {
-  width: 100%;
-  height: auto;
+#dushehra-scroll{
+  height: 380px;
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: auto; 
   flex-wrap: nowrap;
-  gap: 12px;
-  padding: 10px 10px 16px;
-  scroll-snap-type: x proximity;
+  
 }
-
-.blueprint,
-.ravan2025 {
-  flex: 0 0 auto;
-  width: min(78vw, 288px);
+.blueprint{
   height: 360px;
+  width: 288px;
   border: 2px solid #F2C035;
   border-radius: 10px;
-  object-fit: cover;
-  scroll-snap-align: start;
+  margin-top: 8px;
+  margin-left: 10px;  
 }
 
-#gallery2025 {
-  margin-top: 20px;
+/*══════════════════════
+  Gallery 2025 Section
+══════════════════════*/
+#gallery2025{
+  height: 580px;
+  margin-top: 30px;
+}
+#album2025{
+  height: 520px;
+  display: flex;
+  overflow-x: auto;
+}
+.ravan2025{
+  height: 500px;
+  width: 280px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid #F2C035;
+  border-radius: 10px;
 }
 
-.ravan2025 {
-  height: 420px;
-  width: min(76vw, 280px);
-}
 
-#temple-section {
-  width: 100%;
-  padding: 20px 14px 0;
+/*══════════════════════
+     Temple Section
+══════════════════════*/
+#temple-section{
+  height: 550px;
 }
-
-#temple-box {
-  width: min(100%, 420px);
-  margin: 0 auto;
+#temple-box{
+  height: 500px;
+  width: 350px;
+  margin: 0 auto 0;
   background: linear-gradient(
-    135deg,
-    #001731,
-    #001025,
-    #001229,
-    #020F20,
-    #09192E,
-    #0B1E38,
-    #0F2648,
-    #172D4A,
-    #0F2648,
-    #0B1E38,
-    #09192E
+  135deg,
+  #001731,
+  #001025,
+  #001229,
+  #020F20,
+  #09192E,
+  #0B1E38,
+  #0F2648,
+  #172D4A,
+  #0F2648,
+  #0B1E38,
+  #09192E
   );
   border: 2px solid #001F40;
   border-radius: 15px;
-  padding: 18px 14px 20px;
 }
-
-#temple-img {
+#temple-img{
   display: block;
-  width: min(100%, 300px);
   height: 240px;
-  object-fit: cover;
+  width: 300px;
   border: 1px solid gold;
   border-radius: 15px;
-  margin: 0 auto 18px;
-  box-shadow:
-    0 0 5px rgba(253, 228, 88, 1),
-    0 0 15px rgba(253, 221, 57, 0.8),
-    0 0 20px rgba(253, 210, 49, 0.6),
-    0 0 25px rgba(254, 185, 36, 0.4),
-    0 0 30px rgba(253, 165, 26, 0.2);
+  margin: 25px auto 0;
+  box-shadow: 
+  0 0 5px rgba(253, 228, 88, 1.0),
+  0 0 15px rgba(253, 221, 57, 0.8),
+  0 0 20px rgba(253, 210, 49, 0.6),
+  0 0 25px rgba(254, 185, 36, 0.4),
+  0 0 30px rgba(253, 165, 26, 0.2);
 }
-
-#temple-p {
+#temple-p{
   color: #F7D89C;
-  margin: 14px 8px 18px;
-  font-size: clamp(1rem, 2.7vw, 1.2rem);
-  line-height: 1.6;
+  margin: 25px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
-
-#address {
+#address{
   color: #FBB338;
-  margin-left: 8px;
-  font-size: clamp(1rem, 2.8vw, 1.3rem);
+  margin-left: 20px;
+  font-size: 20px;
 }
-
-#temple-address {
+#temple-address{
   color: #F7D89C;
-  margin-left: 12px;
-  margin-top: 6px;
-  font-size: clamp(1rem, 2.8vw, 1.2rem);
-  margin-bottom: 18px;
+  margin-left: 25px;
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
-#location-btn {
-  height: 38px;
-  width: min(100%, 200px);
+a{
+  text-decoration: none;
+}
+#location-btn{
+  height: 30px;
+  width: 200px;
   border: 2px solid #F5CB63;
   border-radius: 15px;
   display: block;
   margin: 20px auto 0;
-  background: linear-gradient(135deg, #F5CB63, #F7D89C);
-  color: #1c1a1a;
-  font-weight: 600;
-  cursor: pointer;
 }
 
-footer {
-  height: auto;
+/*══════════════════════
+         Footer
+══════════════════════*/
+footer{
+  height: 110px;
   background-color: #06172B;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 24px 12px 18px;
-  margin-top: 26px;
 }
-
-#footer-heading {
+#footer-heading{
   color: #F5C96D;
-  font-size: clamp(1.1rem, 3vw, 1.7rem);
 }
-
-#footer-subheading {
+#footer-subheading{
   color: #F5C96D;
-  font-size: clamp(1rem, 2.8vw, 1.3rem);
-  margin-top: 8px;
+  font-size: 20px;
 }
-
-#footer-paragraph {
+#footer-paragraph{
   color: #C9D1E1;
-  margin-top: 6px;
-  font-size: clamp(0.9rem, 2.4vw, 1rem);
 }
-
-#footer-end {
+#footer-end{
   color: #F5C96D;
-  margin-top: 8px;
-  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-@media (max-width: 480px) {
-  nav {
-    gap: 8px;
-    padding: 8px 10px;
-  }
+/* ══════════════════════
+   RESPONSIVE MEDIA QUERIES
+══════════════════════ */
 
-  .links {
-    font-size: 12px;
-    padding: 6px 8px;
-  }
-
+/* Tablet & Small Laptop (600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
   #hero {
-    min-height: 220px;
-    padding-top: 18px;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
   }
-
-  .hero-text {
-    padding-left: 6px;
+  
+  #about-bushehra {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
   }
-
-  #hero-btn-box {
-    margin-left: 8px;
-    gap: 6px;
+  
+  #temple-box {
+    width: 80%;
+    max-width: 550px;
+    height: auto;
   }
-
-  .hero-btn {
-    height: 32px;
-    min-width: 80px;
-    padding: 0 12px;
-    font-size: 12px;
+  
+  .blueprint {
+    width: 250px;
+    height: 250px;
   }
-
-  #blueprint-heading {
-    margin-left: 16px;
+  
+  .ravan2025 {
+    width: 250px;
+    height: 350px;
   }
 }
 
-@media (min-width: 768px) {
-  nav {
-    justify-content: space-evenly;
-    gap: 18px;
+/* Large Laptop & Desktop (1025px+) */
+@media (min-width: 1025px) {
+  #hero {
+    width: 60%;
+    max-width: 700px;
+    height: auto;
   }
-
+  
+  #about-bushehra {
+    width: 60%;
+    max-width: 700px;
+    height: auto;
+  }
+  
+  #temple-box {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  nav {
+    justify-content: center;
+    gap: 30px;
+  }
+  
   .links {
     font-size: 16px;
-  }
-
-  #hero {
-    width: min(100%, 760px);
-    min-height: 290px;
-    padding: 28px 22px 16px;
-  }
-
-  #about-bushehra {
-    width: min(100%, 760px);
-    min-height: 420px;
-    padding: 22px 24px 28px;
-  }
-
-  #temple-box {
-    width: min(100%, 520px);
-  }
-
-  #dushehra-scroll,
-  #album2025 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .blueprint,
-  .ravan2025 {
-    width: min(32vw, 320px);
+    padding: 10px 16px;
   }
 }
 
-@media (orientation: landscape) and (max-height: 500px) {
-  nav {
-    padding: 6px 10px;
+/* Mobile Portrait (Small to Medium) */
+@media (max-width: 599px) {
+  header {
+    height: auto;
   }
-
+  
   #hero {
-    min-height: 200px;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
-
-  #hero-heading {
-    padding-top: 8px;
-  }
-
-  #hero-event-countdown {
-    margin-top: 12px;
-  }
-
+  
   #about-bushehra {
-    min-height: 280px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  
+  #temple-section {
+    height: auto;
+    padding: 20px 10px;
+  }
+  
+  #temple-box {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px 15px;
+  }
+  
+  #gallery2025 {
+    height: auto;
+  }
+  
+  #album2025 {
+    height: auto;
+  }
+  
+  .blueprint {
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+  }
+  
+  .ravan2025 {
+    width: 180px;
+    height: 250px;
+    margin-left: 5px;
+  }
+  
+  #footer-heading {
+    font-size: 16px;
+  }
+  
+  #footer-subheading {
+    font-size: 14px;
+  }
+  
+  #footer-paragraph {
+    font-size: 12px;
+  }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) and (max-height: 600px) {
+  header {
+    height: auto;
+  }
+  
+  #hero {
+    height: auto;
+    width: 100%;
+  }
+  
+  #hero-event-countdown {
+    width: 150px;
+    height: 40px;
+    margin: 10px auto;
+  }
+  
+  .time-text {
+    font-size: 20px;
+  }
+  
+  #about-bushehra {
+    height: auto;
+    width: 100%;
+  }
+  
+  #gallery2025 {
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  #temple-section {
+    height: auto;
+  }
+  
+  footer {
+    height: auto;
+    padding: 15px 10px;
+  }
+  
+  #footer-subheading {
+    font-size: 14px;
+  }
+  
+  #footer-paragraph {
+    font-size: 11px;
   }
 }
