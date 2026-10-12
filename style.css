@@ -73,7 +73,6 @@ nav {
     padding: 7px 8px;
   }
 }
-
 #heading-box{
   margin-top: 10px;
   display: flex;
@@ -88,7 +87,7 @@ nav {
 #header-hindi-heading{
   font-family: 'Cinzel', serif;
 }
-#header-english-heading{
+#header-englist-heading{
   font-size: 20px;
   font-family: 'Poppins', serif;
   margin-top: 10px;
@@ -100,10 +99,9 @@ nav {
 #hero{
   height: 250px;
   width: 384px;
-  background-image: url("hero.png");
+  background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto;
 }
 .hero-text{
   color: #F1DCAC;
@@ -153,11 +151,10 @@ nav {
 #about-bushehra{
   height: 400px;
   width: 384px;
-  background-image: url("about.png");
+  background-image: url("../images/about.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
 }
 #about-about{
   color: #F4AE48;
@@ -336,182 +333,4 @@ footer{
 }
 #footer-end{
   color: #F5C96D;
-}
-
-/* ══════════════════════
-   RESPONSIVE MEDIA QUERIES
-══════════════════════ */
-
-/* Tablet & Small Laptop (600px - 1024px) */
-@media (min-width: 600px) and (max-width: 1024px) {
-  #hero {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-  }
-  
-  #about-bushehra {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-  }
-  
-  #temple-box {
-    width: 80%;
-    max-width: 550px;
-    height: auto;
-  }
-  
-  .blueprint {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .ravan2025 {
-    width: 250px;
-    height: 350px;
-  }
-}
-
-/* Large Laptop & Desktop (1025px+) */
-@media (min-width: 1025px) {
-  #hero {
-    width: 60%;
-    max-width: 700px;
-    height: auto;
-  }
-  
-  #about-bushehra {
-    width: 60%;
-    max-width: 700px;
-    height: auto;
-  }
-  
-  #temple-box {
-    width: 60%;
-    max-width: 600px;
-    height: auto;
-  }
-  
-  nav {
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .links {
-    font-size: 16px;
-    padding: 10px 16px;
-  }
-}
-
-/* Mobile Portrait (Small to Medium) */
-@media (max-width: 599px) {
-  header {
-    height: auto;
-  }
-  
-  #hero {
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
-  
-  #about-bushehra {
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
-  
-  #temple-section {
-    height: auto;
-    padding: 20px 10px;
-  }
-  
-  #temple-box {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    padding: 20px 15px;
-  }
-  
-  #gallery2025 {
-    height: auto;
-  }
-  
-  #album2025 {
-    height: auto;
-  }
-  
-  .blueprint {
-    width: 200px;
-    height: 200px;
-    margin-left: 5px;
-  }
-  
-  .ravan2025 {
-    width: 180px;
-    height: 250px;
-    margin-left: 5px;
-  }
-  
-  #footer-heading {
-    font-size: 16px;
-  }
-  
-  #footer-subheading {
-    font-size: 14px;
-  }
-  
-  #footer-paragraph {
-    font-size: 12px;
-  }
-}
-
-/* Landscape Mode */
-@media (orientation: landscape) and (max-height: 600px) {
-  header {
-    height: auto;
-  }
-  
-  #hero {
-    height: auto;
-    width: 100%;
-  }
-  
-  #hero-event-countdown {
-    width: 150px;
-    height: 40px;
-    margin: 10px auto;
-  }
-  
-  .time-text {
-    font-size: 20px;
-  }
-  
-  #about-bushehra {
-    height: auto;
-    width: 100%;
-  }
-  
-  #gallery2025 {
-    height: auto;
-    margin-top: 15px;
-  }
-  
-  #temple-section {
-    height: auto;
-  }
-  
-  footer {
-    height: auto;
-    padding: 15px 10px;
-  }
-  
-  #footer-subheading {
-    font-size: 14px;
-  }
-  
-  #footer-paragraph {
-    font-size: 11px;
-  }
-}
+   }
